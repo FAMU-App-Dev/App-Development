@@ -12,5 +12,5 @@
     -Explore page
     -Saved recommendations
     -Recommendation likes
-    -Chat
+    -Chat 
    
