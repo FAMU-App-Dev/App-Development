@@ -5,8 +5,10 @@
     -User login 
     -User recommendations for each category (movies, tv shows, music, etc.)
     -Description of why it was recommended
+    -Profile Pages(name, bio, reommendations etc.)
     -Friends List
     -Search Bar (places, friends, specific movies)
+    -Settings (Accessibility, Notification, General etc.)
     
   Nice-to-Haves:
     -Explore page
