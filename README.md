@@ -15,4 +15,10 @@
     -Saved recommendations
     -Recommendation likes
     -Chat 
-   
+    
+2. Screens
+  -Login Screen
+  -Register Account Screen
+  -Recommendation Screen
+  -Profile Page Screen
+  
