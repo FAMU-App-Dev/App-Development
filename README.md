@@ -19,6 +19,9 @@
 2. Screens
   -Login Screen
   -Register Account Screen
-  -Recommendation Screen
   -Profile Page Screen
+  -Friends List Screen
+  -Settings Screen
+  -Search Bar Screen
+  -Chat Screen
   
