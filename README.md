@@ -1,6 +1,7 @@
 # App-Development
 
 1. User Stories
+
   Required:
     -User login 
     -User recommendations for each category (movies, tv shows, music, etc.)
@@ -17,6 +18,7 @@
     -Chat 
     
 2. Screens
+
   -Login Screen
   -Register Account Screen
   -Profile Page Screen
@@ -24,4 +26,15 @@
   -Settings Screen
   -Search Bar Screen
   -Chat Screen
+		
   
+  
+3. Tab Navigation:
+ 
+  -Friends
+  -Home
+  -Chat
+  -User Profile
+	
+4. Wireframes
+![IMG_1438](https://user-images.githubusercontent.com/70450120/193641889-6c40af91-6e28-48df-a849-acacff7c932f.jpg)
