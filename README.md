@@ -42,3 +42,22 @@
 5. Digital Wireframes/Mockups
 <img width="248" alt="image" src="https://user-images.githubusercontent.com/70450120/193645598-1377b93f-7996-4f97-ad57-21f687bed86c.png">
 
+
+Data Models
+User Profile
+|Property|Type|Description| 
+|---|---|---|
+|`userID`|String|unique id for user
+|`email`|String|email for each user
+|`profilePic`|File|profile picture for each user
+|`caption`|String|personalized bio
+
+Post
+|Property|Type|Description| 
+|---|---|---|
+
+
+
+
+
+
