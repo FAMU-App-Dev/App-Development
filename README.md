@@ -95,3 +95,7 @@ Rekko (Post)
 ### Gif 2
 ![Milestone3Gif](https://github.com/FAMU-App-Dev/App-Development/blob/main/sprint3.gif)
 
+
+### Gif 3
+![Milestone3Gif](https://github.com/FAMU-App-Dev/App-Development/blob/main/screeny.gif)
+
