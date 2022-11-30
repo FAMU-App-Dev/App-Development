@@ -13,9 +13,8 @@ public class SerializableFriends {
     private @Nullable String id;
     private String name;
     private String img;
-    private String recommendation;
+    private String sender;
+    private String receiver;
 
 
-    public SerializableFriends(String id, String name, String picture, String sender, String receiver) {
-    }
 }

@@ -9,9 +9,7 @@ public class Friends extends ParseObject {
     final static String ID = "id";
     final static String NAME = "name";
     final static String PICTURE = "Picture";
-
     final static String SENDER = "sender";
-
     final static String RECEIVER = "receiver";
 
     public String getID() {return getString(ID);}

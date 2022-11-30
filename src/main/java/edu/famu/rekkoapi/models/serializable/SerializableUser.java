@@ -14,9 +14,13 @@ public class SerializableUser {
     private @Nullable String id;
     private String username;
     private String email;
-    private String country;
+    private String Bio;
     private String img;
     private String city;
     private String phone;
     private boolean isAdmin;
+
+
+    public SerializableUser(String id, String username, String email, String bio, String img, String city, boolean isAdmin) {
+    }
 }
