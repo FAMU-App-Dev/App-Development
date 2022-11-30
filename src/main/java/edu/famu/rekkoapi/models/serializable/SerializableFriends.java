@@ -20,4 +20,6 @@ public class SerializableFriends {
     private double cheapestPrice;
     private boolean featured;
 
+    public SerializableFriends(String name, String img, String recommendation) {
+    }
 }

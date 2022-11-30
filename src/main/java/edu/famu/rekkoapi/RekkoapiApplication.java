@@ -1,5 +1,6 @@
 package edu.famu.rekkoapi;
 
+import io.github.cdimascio.dotenv.Dotenv;
 import org.parse4j.Parse;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
