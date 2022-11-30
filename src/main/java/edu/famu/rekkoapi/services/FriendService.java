@@ -23,7 +23,7 @@ public class FriendService {
         String[] strList = {"img", "name", "recommendation"};
 
         //defines the query for the product class
-        ParseQuery<Post> query = ParseQuery.getQuery(Post.class);
+        ParseQuery<Friends> query = ParseQuery.getQuery(Friends.class);
 
         try{
             Post use = query.get(id); //retrieves the product by it's objectid
