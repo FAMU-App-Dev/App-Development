@@ -61,14 +61,16 @@ public class PostService {
         Post parsePost = new Post(); //Parse Product Object
 
         //set the value of each of the fields
-        parsePost.setNAME(post.getNAME());
-        parsePost.setDESC(post.getDESC());
-        parsePost.setTEST(post.getTEST());
+        parsePost.setNAME(post.getName());
+        parsePost.setDESC(post.getDescription());
+        parsePost.setTEST(post.getTestimonial());
+        parsePost.setTYPE(post.getType());
+        parsePost.setPOSTER(post.getPoster());
 
 
         try {
             parsePost.save(); //runs the query to insert the new value
-            message = "User Created"; //set success the return message
+            message = "Post Created"; //set success the return message
         } catch (ParseException e) {
             e.printStackTrace(); //print the error to the console
             //set the error return message
@@ -82,7 +84,7 @@ public class PostService {
     {
         String message;
 
-        String[] strList = {"name", "desc", "test"};
+        String[] strList = {"name", "Description", "Testimonial", "Type", "Poster"};
 
         //defines the query for the product class
         ParseQuery<Post> query = ParseQuery.getQuery(Post.class);

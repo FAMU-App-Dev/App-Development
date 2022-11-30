@@ -26,7 +26,7 @@ public class Post extends ParseObject {
 
     public SerializablePost getSerializable() {
 
-        return new SerializablePost(getID(), getNAME(), getDESC(), getTEST());
+        return new SerializablePost(getID(), getNAME(), getDESC(), getTEST(), getTYPE(),getPOSTER());
     }
 
 }

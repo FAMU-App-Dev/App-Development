@@ -87,7 +87,7 @@ public class UserService {
     {
         String message;
 
-        String[] strList = {"username", "email", "country", "img", "city", "phone"};
+        String[] strList = {"username", "email", "Bio", "img", "city"};
 
         //defines the query for the product class
         ParseQuery<User> query = ParseQuery.getQuery(User.class);

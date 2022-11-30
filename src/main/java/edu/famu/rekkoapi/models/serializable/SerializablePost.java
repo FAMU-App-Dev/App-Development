@@ -11,19 +11,11 @@ import org.springframework.lang.Nullable;
 public class SerializablePost {
     private @Nullable String id;
     private String name;
-    private String desc;
-    private String test;
+    private String Description;
+    private String Testimonial;
+    private String Type;
+    private String Poster;
 
-    public String getNAME() {
-        return null;
-    }
 
-    public String getDESC() {
-        return null;
-    }
-
-    public String getTEST() {
-        return null;
-    }
-}
+   }
 
