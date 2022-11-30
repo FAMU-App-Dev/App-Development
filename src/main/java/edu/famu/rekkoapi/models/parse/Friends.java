@@ -4,7 +4,6 @@ import edu.famu.rekkoapi.models.serializable.SerializableFriends;
 import org.parse4j.ParseClassName;
 import org.parse4j.ParseObject;
 
-
 @ParseClassName("Friends")
 public class Friends extends ParseObject {
     final static String ID = "id";
@@ -26,8 +25,7 @@ public class Friends extends ParseObject {
     public String getReceiver() {return getString(RECEIVER);}
     public void setReceiver(String receiver) {put(RECEIVER, receiver);}
 
-
     public SerializableFriends getSerializable() {
-        return new SerializableFriends(getID(),getPicture(),getName());
+        return new SerializableFriends(getID(),getName(),getPicture(),getSender(),getReceiver());
     }
 }

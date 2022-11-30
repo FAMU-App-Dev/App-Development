@@ -16,5 +16,6 @@ public class SerializableFriends {
     private String recommendation;
 
 
-
+    public SerializableFriends(String id, String name, String picture, String sender, String receiver) {
+    }
 }
