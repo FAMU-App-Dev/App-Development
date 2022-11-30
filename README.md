@@ -99,3 +99,7 @@ Rekko (Post)
 ### Gif 3
 ![Milestone3Gif](https://github.com/FAMU-App-Dev/App-Development/blob/main/screeny.gif)
 
+### Gif 4
+![Milestone3Gif](https://github.com/FAMU-App-Dev/App-Development/blob/main/gif4.gif)
+
+- Working on completing the backend code. So far we have worked on the user model, controllers and services.
