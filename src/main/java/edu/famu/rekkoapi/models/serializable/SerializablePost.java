@@ -20,4 +20,18 @@ public class SerializablePost {
     private double cheapestPrice;
     private boolean featured;
 
+    public SerializablePost(String id, String name, String desc, String test) {
+    }
+
+    public String getDESC() {
+        return null;
+    }
+
+    public String getNAME() {
+        return null;
+    }
+
+    public String getTEST() {
+        return null;
+    }
 }
