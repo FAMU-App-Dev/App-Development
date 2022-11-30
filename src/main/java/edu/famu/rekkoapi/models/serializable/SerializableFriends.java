@@ -10,16 +10,11 @@ import java.util.ArrayList;
 @AllArgsConstructor
 @NoArgsConstructor
 public class SerializableFriends {
+    private @Nullable String id;
     private String name;
-    private String type;
-    private String city;
-    private String address;
-    private String distance;
-    private String title;
-    private int rating;
-    private double cheapestPrice;
-    private boolean featured;
+    private String img;
+    private String recommendation;
 
-    public SerializableFriends(String name, String img, String recommendation) {
-    }
+
+
 }

@@ -1,7 +1,6 @@
 package edu.famu.rekkoapi.services;
 
 import edu.famu.rekkoapi.models.parse.Friends;
-import edu.famu.rekkoapi.models.parse.Post;
 import edu.famu.rekkoapi.models.serializable.SerializableFriends;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
@@ -26,8 +25,8 @@ public class FriendService {
         ParseQuery<Friends> query = ParseQuery.getQuery(Friends.class);
 
         try{
-            Post use = query.get(id); //retrieves the product by it's objectid
-            post.forEach((k,v) -> {
+            Friends use = query.get(id); //retrieves the product by it's objectid
+            friend.forEach((k,v) -> {
                 if(Objects.equals(k, "isAdmin"))
                     use.put(k,(Boolean)v);
                 else if (Arrays.asList(strList).contains(k))

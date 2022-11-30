@@ -7,22 +7,27 @@ import org.parse4j.ParseObject;
 
 @ParseClassName("Friends")
 public class Friends extends ParseObject {
-
     final static String ID = "id";
-    final static String IMG = "img";
     final static String NAME = "name";
-    final static String RECOMMENDATION = "recommendation";
+    final static String PICTURE = "Picture";
+
+    final static String SENDER = "sender";
+
+    final static String RECEIVER = "receiver";
 
     public String getID() {return getString(ID);}
     public void setID(String id) {put(ID, id);}
-    public String getImg() {return getString(IMG);}
-    public void setImg(String img) {put(IMG, img);}
     public String getName() {return getString(NAME);}
     public void setName(String name) {put(NAME,name);}
-    public String getRecommendation() {return getString(RECOMMENDATION);}
-    public void setRecommendation(String recommendation) {put(RECOMMENDATION, recommendation);}
+    public String getPicture() {return getString(PICTURE);}
+    public void setPicture(String Picture) {put(PICTURE, Picture);}
+    public String getSender() {return getString(SENDER);}
+    public void setSender(String sender) {put(SENDER, sender);}
+    public String getReceiver() {return getString(RECEIVER);}
+    public void setReceiver(String receiver) {put(RECEIVER, receiver);}
+
 
     public SerializableFriends getSerializable() {
-        return new SerializableFriends(getName(),getImg(),getRecommendation());
+        return new SerializableFriends(getID(),getPicture(),getName());
     }
 }

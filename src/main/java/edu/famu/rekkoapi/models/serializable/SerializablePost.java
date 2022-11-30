@@ -5,29 +5,20 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.springframework.lang.Nullable;
 
-import java.util.ArrayList;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 public class SerializablePost {
+    private @Nullable String id;
     private String name;
-    private String type;
-    private String city;
-    private String address;
-    private String distance;
-    private String title;
-    private int rating;
-    private double cheapestPrice;
-    private boolean featured;
+    private String desc;
+    private String test;
 
-    public SerializablePost(String id, String name, String desc, String test) {
-    }
-
-    public String getDESC() {
+    public String getNAME() {
         return null;
     }
 
-    public String getNAME() {
+    public String getDESC() {
         return null;
     }
 
@@ -35,3 +26,4 @@ public class SerializablePost {
         return null;
     }
 }
+
