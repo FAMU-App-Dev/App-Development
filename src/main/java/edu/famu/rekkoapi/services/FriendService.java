@@ -21,7 +21,7 @@ public class FriendService {
 
         String[] strList = {"img", "name", "recommendation"};
 
-        //defines the query for the product class
+        //defines the query for the friends class
         ParseQuery<Friends> query = ParseQuery.getQuery(Friends.class);
 
         try{

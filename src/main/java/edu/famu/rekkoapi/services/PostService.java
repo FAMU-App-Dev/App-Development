@@ -9,6 +9,7 @@ import org.parse4j.ParseException;
 import org.parse4j.ParseQuery;
 import org.springframework.stereotype.Service;
 import java.util.*;
+
 @Service
 public class PostService {
     protected final Log logger = LogFactory.getLog(this.getClass()); //used to write to the console
@@ -111,13 +112,13 @@ public class PostService {
     {
         String message;
 
-        //defines the query for the product class
+        //defines the query for the post class
         ParseQuery<Post> query = ParseQuery.getQuery(Post.class);
 
         try
         {
             Post post = query.get(id); //get post by id
-            post.delete(); //delete use
+            post.delete(); //delete post
             message = "Post" + id + "deleted."; //success message
         } catch (ParseException e) {
             e.printStackTrace();

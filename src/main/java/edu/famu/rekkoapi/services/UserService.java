@@ -77,7 +77,7 @@ public class UserService {
         } catch (ParseException e) {
             e.printStackTrace(); //print the error to the console
             //set the error return message
-            message = "Error creating product. " + e.getMessage();
+            message = "Error creating user. " + e.getMessage();
         }
 
         return message;
