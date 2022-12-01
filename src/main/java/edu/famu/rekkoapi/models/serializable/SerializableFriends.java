@@ -12,7 +12,7 @@ import java.util.ArrayList;
 public class SerializableFriends {
     private @Nullable String id;
     private String name;
-    private String img;
+    private String picture;
     private String sender;
     private String receiver;
 

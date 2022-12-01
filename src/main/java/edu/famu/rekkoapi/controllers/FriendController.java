@@ -40,12 +40,6 @@ public class FriendController {
         return friendService.addFriend(friend);
     }
 
-    @PutMapping("/{id}")
-    public String updateFriend(@PathVariable String id, @RequestBody Map<String, Object> friend)
-    {
-        return FriendService.updateFriend(id, friend);
-    }
-
     @DeleteMapping("/{id}")
     public String deleteFriend(@PathVariable String id)
     {
