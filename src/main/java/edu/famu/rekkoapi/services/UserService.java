@@ -67,7 +67,7 @@ public class UserService {
         parseUser.setEmail(user.getEmail());
         parseUser.setBio(user.getBio());
         parseUser.setImg(user.getImg());
-
+        parseUser.setCity(user.getCity());
 
         try {
             parseUser.save(); //runs the query to insert the new value
