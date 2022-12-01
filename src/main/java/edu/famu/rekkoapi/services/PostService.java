@@ -59,7 +59,7 @@ public class PostService {
     {
         String message; //message we will return to the user
 
-        Post parsePost = new Post(); //Parse Product Object
+        Post parsePost = new Post(); //Parse Post Object
 
         //set the value of each of the fields
         parsePost.setNAME(post.getName());
@@ -67,6 +67,7 @@ public class PostService {
         parsePost.setTEST(post.getTestimonial());
         parsePost.setTYPE(post.getType());
         parsePost.setPOSTER(post.getPoster());
+        parsePost.setREKKNUM(post.getRekko_num());
 
 
         try {
@@ -87,7 +88,7 @@ public class PostService {
 
         String[] strList = {"name", "Description", "Testimonial", "Type", "Poster"};
 
-        //defines the query for the product class
+        //defines the query for the post class
         ParseQuery<Post> query = ParseQuery.getQuery(Post.class);
 
         try{

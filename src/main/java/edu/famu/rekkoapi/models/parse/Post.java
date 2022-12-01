@@ -10,6 +10,7 @@ public class Post extends ParseObject {
     final static String TEST = "Testimonial";
     final static String TYPE = "Type";
     final static String POSTER = "Poster";
+    final static String REKKNUM = "rekko_num";
 
     public String getID() {return getString(ID);}
     public void setID(String id) {put(ID, id);}
@@ -23,10 +24,13 @@ public class Post extends ParseObject {
     public void setTYPE(String Type) {put(TYPE, Type);}
     public String getPOSTER() {return getString(POSTER);}
     public void setPOSTER(String Poster) {put(POSTER, Poster);}
+    public int getREKKNUM() {return getInt(REKKNUM);}
+    public void setREKKNUM(int rekko_num) {put(REKKNUM, rekko_num);}
 
     public SerializablePost getSerializable() {
 
-        return new SerializablePost(getID(), getNAME(), getDESC(), getTEST(), getTYPE(),getPOSTER());
+        return new SerializablePost(getID(), getNAME(), getDESC(), getTEST(), getTYPE(),
+                getPOSTER(), getREKKNUM());
     }
 
 }
