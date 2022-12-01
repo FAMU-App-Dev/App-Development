@@ -16,8 +16,4 @@ public class SerializableUser {
     private String email;
     private String Bio;
     private String img;
-    private String city;
-    private String phone;
-    private boolean isAdmin;
-
 }
