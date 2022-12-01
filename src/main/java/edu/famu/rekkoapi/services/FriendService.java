@@ -15,33 +15,6 @@ import java.util.Objects;
 public class FriendService {
 
     protected final Log logger = LogFactory.getLog(this.getClass()); //used to write to the console
-    public static String updateFriend(String id, Map<String, Object> friend) {
-
-        String message;
-
-        String[] strList = {"name", "Picture", "sender", "receiver"};
-
-        //defines the query for the friends class
-        ParseQuery<Friends> query = ParseQuery.getQuery(Friends.class);
-
-        try{
-            Friends use = query.get(id); //retrieves the product by it's objectid
-            friend.forEach((k,v) -> {
-                if(Objects.equals(k, "isAdmin"))
-                    use.put(k,(Boolean)v);
-                else if (Arrays.asList(strList).contains(k))
-                    use.put(k,(String)v);
-            });
-            use.save(); //execute update query
-            message = "Post Updated."; //success message
-        } catch (ParseException e) {
-            e.printStackTrace();
-            message = "Error updating post. " + e.getMessage(); //failure message
-        }
-
-        return message;
-
-    }
 
     public ArrayList<Friends> retrieveFriends(String sort) {
         return null;
