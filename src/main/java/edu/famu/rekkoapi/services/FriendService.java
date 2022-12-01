@@ -1,7 +1,6 @@
 package edu.famu.rekkoapi.services;
 
 import edu.famu.rekkoapi.models.parse.Friends;
-import edu.famu.rekkoapi.models.parse.User;
 import edu.famu.rekkoapi.models.serializable.SerializableFriends;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
