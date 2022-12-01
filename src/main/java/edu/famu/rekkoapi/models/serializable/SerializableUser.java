@@ -15,6 +15,7 @@ public class SerializableUser {
     private String username;
     private String email;
     private String Bio;
-    private String img;
+    private String Picture;
     private String city;
+
 }
