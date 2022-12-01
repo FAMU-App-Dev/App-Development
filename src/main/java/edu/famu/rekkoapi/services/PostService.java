@@ -22,9 +22,9 @@ public class PostService {
         ParseQuery<Post> query = ParseQuery.getQuery(Post.class);
         try {
             if(sort.equals("asc")){
-                list = query.orderByAscending("name").find();
+                list = query.orderByAscending("Like").find();
             }else{
-                list = query.orderByDescending("name").find();
+                list = query.orderByDescending("Like").find();
             }
 
             for (Post p : list) {
@@ -67,7 +67,7 @@ public class PostService {
         parsePost.setTEST(post.getTestimonial());
         parsePost.setTYPE(post.getType());
         parsePost.setPOSTER(post.getPoster());
-        parsePost.setREKKNUM(post.getRekko_num());
+        parsePost.setLIKE(post.getLike());
 
 
         try {
@@ -94,9 +94,7 @@ public class PostService {
         try{
             Post use = query.get(id); //retrieves the product by it's objectid
             post.forEach((k,v) -> {
-                if(Objects.equals(k, "isAdmin"))
-                    use.put(k,(Boolean)v);
-                else if (Arrays.asList(strList).contains(k))
+                if (Arrays.asList(strList).contains(k))
                     use.put(k,(String)v);
             });
             use.save(); //execute update query

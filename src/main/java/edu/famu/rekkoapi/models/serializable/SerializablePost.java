@@ -15,7 +15,7 @@ public class SerializablePost {
     private String Testimonial;
     private String Type;
     private String Poster;
-    private int rekko_num;
+    private int Like;
 
 
    }
