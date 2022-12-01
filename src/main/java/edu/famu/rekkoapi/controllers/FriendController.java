@@ -31,7 +31,7 @@ public class FriendController {
 
     //get only one based on object id
     @GetMapping("/find/{id}")
-    public SerializableFriends getHotelById(@PathVariable String id){
+    public SerializableFriends getFriendById(@PathVariable String id){
         return friendService.getFriendById(id).getSerializable();
     }
 
