@@ -66,7 +66,7 @@ public class UserService {
         parseUser.setPassword("test");
         parseUser.setEmail(user.getEmail());
         parseUser.setBio(user.getBio());
-        parseUser.setImg(user.getImg());
+        parseUser.setPicture(user.getPicture());
         parseUser.setCity(user.getCity());
 
         try {

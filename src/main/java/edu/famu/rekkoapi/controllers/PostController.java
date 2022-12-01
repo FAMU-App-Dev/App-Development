@@ -1,10 +1,7 @@
 package edu.famu.rekkoapi.controllers;
 
-import edu.famu.rekkoapi.models.parse.Friends;
-import edu.famu.rekkoapi.models.serializable.SerializableFriends;
 import edu.famu.rekkoapi.models.serializable.SerializablePost;
 import edu.famu.rekkoapi.models.parse.Post;
-import edu.famu.rekkoapi.services.FriendService;
 import edu.famu.rekkoapi.services.PostService;
 
 import org.springframework.web.bind.annotation.*;
@@ -13,7 +10,7 @@ import java.util.ArrayList;
 public class PostController {
     private PostService postService;
 
-    public PostController(FriendService friendService) {
+    public PostController(PostService postService) {
         this.postService = postService;
     }
 
