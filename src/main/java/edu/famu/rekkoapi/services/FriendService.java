@@ -19,7 +19,7 @@ public class FriendService {
 
         String message;
 
-        String[] strList = {"img", "name", "recommendation"};
+        String[] strList = {"name", "Picture", "sender", "receiver"};
 
         //defines the query for the friends class
         ParseQuery<Friends> query = ParseQuery.getQuery(Friends.class);

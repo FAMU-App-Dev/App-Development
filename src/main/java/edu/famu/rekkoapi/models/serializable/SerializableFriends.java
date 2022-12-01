@@ -16,5 +16,4 @@ public class SerializableFriends {
     private String sender;
     private String receiver;
 
-
 }
