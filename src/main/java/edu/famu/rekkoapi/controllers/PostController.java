@@ -7,6 +7,9 @@ import edu.famu.rekkoapi.services.PostService;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
+@RestController
+@RequestMapping("/api/v1/post")
+
 public class PostController {
     private PostService postService;
 

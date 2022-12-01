@@ -7,6 +7,8 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
 import java.util.Map;
+@RestController
+@RequestMapping("/api/v1/user")
 
 public class UserController {
     private UserService userService;
