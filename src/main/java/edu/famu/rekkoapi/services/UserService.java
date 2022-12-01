@@ -1,5 +1,4 @@
 package edu.famu.rekkoapi.services;
-
 import edu.famu.rekkoapi.models.serializable.SerializableUser;
 import edu.famu.rekkoapi.models.parse.User;
 import org.apache.commons.logging.Log;
@@ -68,8 +67,7 @@ public class UserService {
         parseUser.setEmail(user.getEmail());
         parseUser.setBio(user.getBio());
         parseUser.setImg(user.getImg());
-        parseUser.setCity(user.getCity());
-        parseUser.setIsAdmin(user.isAdmin());
+
 
         try {
             parseUser.save(); //runs the query to insert the new value
