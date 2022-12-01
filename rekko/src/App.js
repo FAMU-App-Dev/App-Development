@@ -18,8 +18,8 @@ function App() {
               <Router>
                   <div className="container">
                   <Routes>
-                      <Route  exact path="/" element={<Home />} />
-                      <Route path="/login" element={<Login />} />
+                      <Route  exact path="/" element={<Login />} />
+                      <Route path="/Home" element={<Home />} />
                       <Route path="/CreateUser" element={<CreateUser />} />
                       <Route path="/Profile" element={<Profile />} />
                       <Route path="/NewRekko" element={<NewRekko />} />
