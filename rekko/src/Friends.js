@@ -9,6 +9,9 @@ function Friends(){
     return(
         <>
             <Nav />
+            <div className="topnav text-center m-3">
+                <input type="text" placeholder="Search.."/>
+            </div>
             <FriendsCard />
         </>
 
