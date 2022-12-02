@@ -33,7 +33,7 @@ public class UserController {
 
     //get only one based on object id
     @GetMapping("/find/{id}")
-    public SerializableUser getHotelById(@PathVariable String id){
+    public SerializableUser getUserById(@PathVariable String id){
         return userService.getUserById(id).getSerializable();
     }
 
