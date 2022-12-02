@@ -36,14 +36,7 @@ function NewRekko(){
                             <div className="col"> <PostCard /> </div>
                         </div>
                     </div>
-                    <div className="form-floating m-3">
-                        <h2 className="h3 mb-3 fw-normal text-center text-purple"> My Rekko Songs </h2>
-                        <div className="row">
-                            <div className="col"> <PostCard /> </div>
-                            <div className="col"> <PostCard /> </div>
-                            <div className="col"> <PostCard /> </div>
-                        </div>
-                    </div>
+
 
                     <button type="button">New Rekko's</button>
 
