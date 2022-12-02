@@ -57,7 +57,7 @@ function CreateUser(){
                         <div className="form-floating m-3">
                             <input type="email" className="form-control" id="floatingInput"
                                    placeholder="name@example.com"
-                                   emailChange={emailAssignment}/>
+                                   onChange={emailAssignment}/>
                             <label htmlFor="floatingInput">Email address</label>
 
                         </div>
@@ -72,14 +72,14 @@ function CreateUser(){
 
                         <div className="form-floating m-3">
                             <input type="password" className="form-control" id="floatingPassword" placeholder="Password"
-                                   passwordChange={passwordAssignment}/>
+                                   onChange={passwordAssignment}/>
                             <label htmlFor="floatingPassword">Password</label>
                         </div>
 
                         <div className="form-floating m-3">
                             <input type="password" className="form-control" id="floatingPassword"
                                    placeholder="Confirm Password"
-                                   cpasswordChange={cpasswordAssignment}/>
+                                   onChange={cpasswordAssignment}/>
                             <label htmlFor="floatingPassword">Password</label>
                         </div>
 

@@ -67,7 +67,6 @@ public class PostService {
         parsePost.setTEST(post.getTestimonial());
         parsePost.setTYPE(post.getType());
         parsePost.setPOSTER(post.getPoster());
-        parsePost.setLIKE(post.getLike());
 
 
         try {
