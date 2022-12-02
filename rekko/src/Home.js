@@ -3,7 +3,10 @@ import Nav from "./components/Nav";
 import PostCard from "./components/PostCard";
 function Home(){
 
+    useEffect(()=>{
 
+
+    },[])
 
     return(
 
