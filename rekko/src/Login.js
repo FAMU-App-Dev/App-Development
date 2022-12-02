@@ -5,6 +5,7 @@ function Login(){
 
     useEffect(()=>{
         window.document.body.classList.add("bg-purple")
+
     })
     return(
 
