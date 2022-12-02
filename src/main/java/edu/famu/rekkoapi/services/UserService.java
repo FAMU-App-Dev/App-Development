@@ -6,6 +6,7 @@ import org.apache.commons.logging.LogFactory;
 import org.parse4j.Parse;
 import org.parse4j.ParseException;
 import org.parse4j.ParseQuery;
+import org.parse4j.ParseUser;
 import org.springframework.stereotype.Service;
 import java.util.*;
 
@@ -13,13 +14,13 @@ import java.util.*;
 public class UserService {
     protected final Log logger = LogFactory.getLog(this.getClass()); //used to write to the console
 
-    public ArrayList<User> retrieveUsers(String sort)
+    public ArrayList<SerializableUser> retrieveUsers(String sort)
     {
 
         logger.info(Parse.isIsRootMode());
-        final ArrayList<User> users = new ArrayList<>();
-        List<User> list;
-        ParseQuery<User> query = ParseQuery.getQuery(User.class);
+        final ArrayList<SerializableUser> users = new ArrayList<>();
+        List<ParseUser> list;
+        ParseQuery<ParseUser> query = ParseQuery.getQuery(ParseUser.class);
         try {
             if(sort.equals("asc")){
                 list = query.orderByAscending("username").find();
@@ -27,8 +28,8 @@ public class UserService {
                 list = query.orderByDescending("username").find();
             }
 
-            for (User p : list) {
-                users.add(p);
+            for (ParseUser p : list) {
+                users.add(new SerializableUser(p.getObjectId(), p.getUsername(), "email", p.getString("Bio"), p.getString("Picture"), p.getString("city")));
             }
         }
         catch(Exception e)

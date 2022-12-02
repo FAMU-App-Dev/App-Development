@@ -3,6 +3,7 @@ package edu.famu.rekkoapi.controllers;
 import edu.famu.rekkoapi.models.serializable.SerializableUser;
 import edu.famu.rekkoapi.models.parse.User;
 import edu.famu.rekkoapi.services.UserService;
+import org.parse4j.ParseUser;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
@@ -23,10 +24,10 @@ public class UserController {
         ArrayList<SerializableUser> users = new ArrayList<>();
 
         //Convert the Parse Product object to a POJO Product object that can be serialized by Spring
-        ArrayList<User> list = userService.retrieveUsers(sort);
-        for(User p : list)
+        ArrayList<SerializableUser> list = userService.retrieveUsers(sort);
+        for(SerializableUser p : list)
         {
-            users.add(p.getSerializable());
+            users.add(p);
         }
         return users;
     }
