@@ -31,17 +31,16 @@ function CreateUser(){
     const packageAccount = () => {
 
         const account = {
-            "accountID": "N/A",
+            "id": "N/A",
             "bio": "",
             "username": username,
             "password": password,
-            "cpassword": cpassword,
             "email": email,
             "picture": "",
             "city": ""
         };
         const addAccount = () => {
-            axios.post('http://localhost:8080/api/v1/user', account)
+            axios.post('http://localhost:8080/api/v1/user', account).then(r => {})
         }
 
         addAccount();
