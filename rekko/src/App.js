@@ -8,13 +8,13 @@ import NewRekko from "./NewRekko";
 import Friends from "./Friends";
 import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
 import Nav from "./components/Nav";
+import MovieList from "./components/MovieList";
+import React from 'react';
 
 function App() {
   return (
 
       <>
-
-
               <Router>
                   <div className="container">
                   <Routes>
@@ -25,10 +25,9 @@ function App() {
                       <Route path="/NewRekko" element={<NewRekko />} />
                       <Route path="/Friends" element={<Friends />} />
                   </Routes>
+
                   </div>
               </Router>
-
-
       </>
 
   );

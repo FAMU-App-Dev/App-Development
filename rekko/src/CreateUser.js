@@ -4,46 +4,13 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {regular} from "@fortawesome/fontawesome-svg-core/import.macro";
 
 function CreateUser(){
-    const [email, setEmail] = useState("");
-    const [username, setUsername] = useState("")
-    const [password, setPassword] = useState("");
-    const [cpassword, setCPassword] = useState("");
+
 
 
     useEffect(()=>{
         window.document.body.classList.add("bg-purple")
     })
 
-    const usernameAssignment = (e) => {
-        setUsername(e.target.value)
-    }
-    const emailAssignment = (e) => {
-        setEmail(e.target.value)
-    }
-
-    const passwordAssignment = (e) => {
-        setPassword(e.target.value)
-    }
-
-    const cpasswordAssignment = (e) => {
-        setCPassword(e.target.value)
-    }
-    const packageAccount = () => {
-
-        const account = {
-            "id": "N/A",
-            "bio": "",
-            "username": username,
-            "password": password,
-            "email": email,
-            "picture": "",
-            "city": ""
-        };
-        const addAccount = () => {
-            axios.post('http://localhost:8080/api/v1/user', account).then(r => {})
-        }
-
-        addAccount();
 
         return (
             <>
@@ -57,7 +24,8 @@ function CreateUser(){
                         <div className="form-floating m-3">
                             <input type="email" className="form-control" id="floatingInput"
                                    placeholder="name@example.com"
-                                   onChange={emailAssignment}/>
+                                  // onChange={emailAssignment}
+                            />
                             <label htmlFor="floatingInput">Email address</label>
 
                         </div>
@@ -65,32 +33,34 @@ function CreateUser(){
                         <div className="form-floating m-3">
                             <input type="text" className="form-control" id="floatingInput"
                                    placeholder="name@example.com"
-                                   onChange={() => usernameAssignment}/>
+                                  // onChange={() => usernameAssignment}
+                            />
                             <label htmlFor="floatingInput">Username</label>
                         </div>
 
 
                         <div className="form-floating m-3">
                             <input type="password" className="form-control" id="floatingPassword" placeholder="Password"
-                                   onChange={passwordAssignment}/>
+                                  // onChange={passwordAssignment}
+                            />
                             <label htmlFor="floatingPassword">Password</label>
                         </div>
 
                         <div className="form-floating m-3">
                             <input type="password" className="form-control" id="floatingPassword"
                                    placeholder="Confirm Password"
-                                   onChange={cpasswordAssignment}/>
-                            <label htmlFor="floatingPassword">Password</label>
+                                  // onChange={cpasswordAssignment}
+                            />
+                            <label htmlFor="floatingPassword"> Confirm Password</label>
                         </div>
 
-                        <button className="w-100 btn btn-lg btn-light m-3" type="submit">Create Account
-                            onClick={packageAccount}
+                        <button className="w-90 btn btn-lg btn-light m-3" type="submit">Create Account
+
                         </button>
                     </form>
                 </main>
 
             </>
         )
-    }
 }
 export default CreateUser;

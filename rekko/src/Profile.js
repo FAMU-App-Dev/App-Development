@@ -5,6 +5,7 @@ import {Dialog} from "primereact/dialog";
 import {InputText} from "primereact/inputtext";
 import profile from "./profile.png";
 import PostCard from "./components/PostCard";
+import MovieList from "./components/MovieList";
 
 
 function Profile(){
@@ -57,20 +58,13 @@ function Profile(){
                     <center>
                         <button type="button">Update Profile</button>
                     </center>
+                    <div  className="container">
                     <div className="form-floating m-3">
                         <h2 className="h3 mb-3 fw-normal text-center text-purple"> My Rekko's </h2>
-                        <div className="row">
-                            <div className="col"> <PostCard /> </div>
-                            <div className="col"> <PostCard /> </div>
-                            <div className="col"> <PostCard /> </div>
-                            <div className="col"> <PostCard /> </div>
-                            <div className="col"> <PostCard /> </div>
-                            <div className="col"> <PostCard /> </div>
-                            <div className="col"> <PostCard /> </div>
-                            <div className="col"> <PostCard /> </div>
-                        </div>
-                    </div>
 
+                    </div>
+                        <MovieList />
+                    </div>
                 </form>
             </main>
 
