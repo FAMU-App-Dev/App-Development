@@ -14,6 +14,7 @@ public class SerializableUser {
     private @Nullable String id;
     private String username;
     private String email;
+    private String password;
     private String Bio;
     private String Picture;
     private String city;

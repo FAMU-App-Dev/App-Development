@@ -11,8 +11,7 @@ public class User extends ParseUser {
     final static String USERNAME = "username";
     final static String EMAIL = "email";
     final static String BIO = "Bio";
-
-
+    final static String PASSWORD = "password";
     final static String PICTURE = "Picture";
 
 
@@ -22,6 +21,8 @@ public class User extends ParseUser {
     public void setID(String id) {put(ID, id);}
     public String getUsername() {return getString(USERNAME);}
     public void setUsername(String username) {put(USERNAME, username);}
+    public String getPassword() {return getString(PASSWORD);}
+    public void setPassword(String password) {put(USERNAME, password);}
     public String getEmail() {return getString(EMAIL);}
     public void setEmail(String email) {put(EMAIL, email);}
     public String getBio() {return getString(BIO);}
@@ -34,7 +35,7 @@ public class User extends ParseUser {
 
 
     public SerializableUser getSerializable() {
-        return new SerializableUser(getID(),getUsername(),getEmail(),getBio(),getPicture(),getCity());
+        return new SerializableUser(getID(),getUsername(),getPassword(), getEmail(),getBio(),getPicture(),getCity());
 
 
     }
