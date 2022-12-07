@@ -19,7 +19,7 @@ function Home(){
                     <h1 className=" fw-normal text-center text-purple">Let's get rekkin!</h1>
 
                     <div className="form-floating m-3">
-                        <h2 className="h3 mb-3 fw-normal text-center text-purple"> Highest Rekko's </h2>
+                        <h2 className="h3 mb-3 fw-normal text-center text-purple">  </h2>
                     </div>
                         <MovieList />
                     </div>

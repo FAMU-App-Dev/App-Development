@@ -35,7 +35,17 @@ public class PostController {
     public SerializablePost getPostById(@PathVariable String id){
         return postService.getPostById(id).getSerializable();
     }
-
+    @GetMapping("/movie/{MovieId}")
+    public ArrayList<SerializablePost> getPostByMovieId(@PathVariable int MovieId)
+    {
+        ArrayList<SerializablePost> post = new ArrayList<>();
+        ArrayList<Post> list = postService.getPostByMovieId(MovieId);
+        for(Post p : list)
+        {
+            post.add(p.getSerializable());
+        }
+        return post;
+    }
     @PostMapping("/")
     public String createPost(@RequestBody SerializablePost post){
         return postService.addPost(post);

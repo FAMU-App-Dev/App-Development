@@ -55,6 +55,26 @@ public class PostService {
         return post;
     }
 
+    public ArrayList<Post> getPostByMovieId(int MovieId)
+    {
+        final ArrayList<Post> posts = new ArrayList<>();
+
+        ParseQuery<Post> query = ParseQuery.getQuery(Post.class);
+        query.whereEqualTo("MovieId", MovieId);
+        List<Post> list;
+        try{
+            list = query.find();
+            for (Post p : list) {
+                posts.add(p);
+            }
+        }catch (ParseException e)
+        {
+            e.printStackTrace();
+        }
+
+        return posts;
+    }
+
     public String addPost(SerializablePost post)
     {
         String message; //message we will return to the user
@@ -66,7 +86,8 @@ public class PostService {
         parsePost.setDESC(post.getDescription());
         parsePost.setTEST(post.getTestimonial());
         parsePost.setTYPE(post.getType());
-        parsePost.setPOSTER(post.getPoster());
+        parsePost.setPOSTER(post.getPoster().getId());
+        parsePost.setMOVIEID(post.getMovieId());
 
 
         try {

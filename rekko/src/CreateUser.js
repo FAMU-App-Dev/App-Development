@@ -54,9 +54,8 @@ function CreateUser(){
                             <label htmlFor="floatingPassword"> Confirm Password</label>
                         </div>
 
-                        <button className="w-90 btn btn-lg btn-light m-3" type="submit">Create Account
+                        <button>Create Account</button>
 
-                        </button>
                     </form>
                 </main>
 

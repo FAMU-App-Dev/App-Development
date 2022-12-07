@@ -1,5 +1,6 @@
 package edu.famu.rekkoapi.models.serializable;
 
+import edu.famu.rekkoapi.models.parse.User;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -14,6 +15,8 @@ public class SerializablePost {
     private String Description;
     private String Testimonial;
     private String Type;
-    private String Poster;
-   }
+    private SerializableUser Poster;
+    private int MovieId;
+
+}
 

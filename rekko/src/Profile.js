@@ -45,7 +45,7 @@ function Profile(){
                     </center>
                 </div>
             </div>
-            <Link to={'/NewRekko'}> New Rekko </Link>
+            <button><Link to={'/NewRekko'}> New Rekko </Link></button>
 
             <main className="form-signin w-100 m-auto text-center ">
                 <form>
@@ -60,10 +60,11 @@ function Profile(){
                     </center>
                     <div  className="container">
                     <div className="form-floating m-3">
-                        <h2 className="h3 mb-3 fw-normal text-center text-purple"> My Rekko's </h2>
+
+                        <h2 className="h3 mb-3 fw-normal text-center text-purple"></h2>
 
                     </div>
-                        <MovieList />
+
                     </div>
                 </form>
             </main>

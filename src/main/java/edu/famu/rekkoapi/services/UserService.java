@@ -29,7 +29,7 @@ public class UserService {
             }
 
             for (ParseUser p : list) {
-                users.add(new SerializableUser(p.getObjectId(), p.getUsername(), p.getString("password"), "email", p.getString("Bio"), p.getString("Picture"), p.getString("city")));
+                users.add(new SerializableUser(p.getObjectId(), p.getUsername(),p.getString ("email"), (String) p.get("Bio"), (String) p.get("Picture"),(String) p.get("city")));
             }
         }
         catch(Exception e)
@@ -64,7 +64,6 @@ public class UserService {
 
         //set the value of each of the fields
         parseUser.setUsername(user.getUsername());
-        parseUser.setPassword(user.getPassword());
         parseUser.setEmail(user.getEmail());
         parseUser.setBio(user.getBio());
         parseUser.setPicture(user.getPicture());
@@ -86,7 +85,7 @@ public class UserService {
     {
         String message;
 
-        String[] strList = {"username", "password", "email", "Bio", "img", "city"};
+        String[] strList = {"username", "email", "Bio", "Picture", "city"};
 
         //defines the query for the product class
         ParseQuery<User> query = ParseQuery.getQuery(User.class);
